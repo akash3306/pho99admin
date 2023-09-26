@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s ease;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.menulist,.dashboard,.eventlist,.newslist{
+    padding: 00px 30px;
+}
+.title{
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+}
+.title ion-icon{
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.title ion-icon:hover{
+    color: var(--main-color);
+}
+.head{
+    width: 70%;
+    font-size: 13px;
+    color: var(--text-color);
+    display: flex;
+    /* align-items: center; */
+}
+.head ion-icon{
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.head ion-icon:hover{
+    color: var(--main-color);
+}
+.blur{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 5;
+    transition: all 0s linear;
+}
+.blur.active{
+    right: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:hover td{
+    background-color: var(--bg-third-color);
+}
+th, td{
+    padding: 10px 0;
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-second-color);
+}
+th{
+    color: var(--text-color);
+}
+table img{
+    width: 100px;
+    height: 50px;
+}
+table ion-icon{
+    padding: 5px;
+    margin: 5px;
+    color: var(--text-color);
+    font-size: 18px !important;
+    cursor: pointer;
+}
+table ion-icon:hover{
+    color: var(--main-color);
+}

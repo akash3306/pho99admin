@@ -1,0 +1,15 @@
+.aboutbox{
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.aboutbox .aboutboxcontent{
+    font-size: 14px;
+    color: var(--text-color);
+}
+.aboutbox img{
+    height: 400px;
+}

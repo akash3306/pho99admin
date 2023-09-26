@@ -1,0 +1,106 @@
+.addmenu,.editmenupagebtn{
+    position: relative;
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: flex-end;
+}
+.addmenu button{
+    position: absolute;
+    top: -35px;
+    right: 140px;
+}
+.editmenupagebtn button{
+    position: absolute;
+    top: -35px;
+    right: -30px;
+}
+.popupbox{
+    position: fixed;
+    z-index: 10;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: var(--bg-second-color);
+    transition: all .5s linear;
+    max-width: 700px;
+}
+.popupbox.active{
+    animation: anim 0.5s forwards;
+}
+@keyframes anim{
+    100%{
+        top: 50px;
+        left: calc(50% - 250px);
+        width: 500px;
+        height: fit-content;
+        border: 1px solid var(--gray-color);
+    }
+}
+.popupboxclose{
+    width: 100%;
+    display: flex;
+    background-color: var(--bg-third-color);
+    justify-content: flex-end;
+    font-size: 20px;
+    height: 40px;
+    position: relative;
+}
+.popupboxclose ion-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: var(--gray-color);
+}
+.popupboxclose ion-icon:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.menuboxs{
+     /* background-color: #1b2537; */
+     width: 100%;
+     margin-top: 14px;
+     height: calc(100vh - 160px);
+     overflow-y: auto;
+     scrollbar-width: thin;
+     font-size: 14px;
+}
+.editpagebox{
+    position: fixed;
+    z-index: 10;
+    width: 0px;
+    height: 0x;
+    overflow: hidden;
+    background-color: var(--bg-second-color);
+    transition: all .5s linear;
+}
+.editpagebox.active{
+    animation: anim2 0.5s forwards;
+}
+@keyframes anim2{
+    100%{
+        top: 50px;
+        left: calc(50% - 200px);
+        width: 400px;
+        height: fit-content;
+        border: 1px solid var(--gray-color);
+    }
+}
+.editpageboxclose{
+    width: 100%;
+    background-color: var(--bg-third-color);
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gray-color);
+    font-size: 20px;
+    height: 40px;
+    position: relative;
+}
+.editpageboxclose ion-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.editpageboxclose ion-icon:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}

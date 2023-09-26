@@ -1,0 +1,9 @@
+.locationboxs{
+    /* background-color: #1b2537; */
+    width: 100%;
+    margin-top: 14px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    font-size: 14px;
+}

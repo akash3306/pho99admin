@@ -1,0 +1,113 @@
+.layout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    --bg-color: black;
+    --bg-second-color: #111;
+    --bg-third-color: #222;
+    --main-color: #ec1c24;
+    --text-color: #aaa;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+}
+.layout.active{
+    --bg-color: white;
+    --bg-second-color: #eee;
+    --bg-third-color: #ccc;
+    --main-color: #ec1c24;
+    --text-color: #555;
+    --gray-color: #777;
+    --white-color: #fff;
+    --black-color: #000;
+}
+.leftlayout{
+    width: 250px;
+    height: 100%;
+    /* background-color: #1b2537; */
+    background-color: var(--bg-second-color);
+    border-right: 2px solid var(--gray-color);
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.leftlayout.active{
+    width: 75px;
+}
+.leftlayout.active .logo{
+    font-size: 12px;
+    padding: 30px 15px;
+    height: 10px;
+}
+.logo{
+    height: 30px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+    transition: all .5s linear;
+}
+.smenu{
+    width: 230px;
+    text-align: left;
+}
+.smenu{
+    font-size: 12px;
+    color: var(--text-color);
+    margin: 4px 0;
+    padding: 12px 30px;
+    align-items: center;
+    display: flex;
+}
+.smenu.active, .smenu:hover{
+    /* background-color: #fbe09c; */
+    color: var(--main-color);
+    cursor: pointer;
+}
+.leftlayout ion-icon{
+    margin-right: 30px;
+    font-size: 16px;
+}
+.rightlayout{
+    width: calc(100% - 250px);
+    height: 100%;
+    /* background-color: #141a28; */
+    background-color: var(--bg-color);
+    transition: all .5s linear;
+}
+.rightlayout.active{
+    width: calc(100% - 75px);
+}
+.topbar{
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.userbox{
+    display: flex;
+    align-items: center;
+}
+.userbox img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.username{
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.designation{
+    font-size: 10px;
+    color: var(--main-color);
+}
+.rightlayout ion-icon{
+    font-size: 25px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.rightlayout ion-icon:hover{
+    color: var(--main-color);
+}

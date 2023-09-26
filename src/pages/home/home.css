@@ -1,0 +1,9 @@
+.homebox{
+    width: 100%;
+    height: calc(100vh - 200px);
+    text-align: center;
+    align-items: center;
+}
+.homebox img{
+    margin: 10% 0;
+}

@@ -1,0 +1,29 @@
+.eventform{
+    padding: 20px;
+    width: calc(100% - 40px);
+    background-color: var(--bg-color);
+}
+.eventformbox{
+    width: 100%;
+}
+.eventformbox label{
+    width: 100%;
+    font-size: 12px;
+    color: var(--text-color);
+}
+.eventformbox input{
+    width: calc(100% - 16px);
+    height: 24px;
+    margin: 5px 0 5px 0;
+    padding: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 0 0 4px 4px;
+    border-bottom: 4px solid var(--gray-color);
+    outline: none;
+}
+.eventformbox input:focus{
+    border-bottom-color: var(--main-color);
+}
